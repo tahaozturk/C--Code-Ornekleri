@@ -1,0 +1,13 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("İsminizi Girin:");
+		string name = Console.ReadLine();
+		Console.WriteLine("Soyadınızı Girin:");
+		string surname = Console.ReadLine();
+		Console.WriteLine("Merhaba"+" "+name+ " "+ surname);
+	}
+}
