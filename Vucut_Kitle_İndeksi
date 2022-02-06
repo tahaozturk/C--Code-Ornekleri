@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Vücut Kitle İndeksi Hesaplayıcı");
+		Console.WriteLine("Kilonuzu Girin: ");
+		string strkilo = Console.ReadLine();
+		Console.WriteLine("Boyunuzu Girin: ");
+		string strboy = Console.ReadLine();
+		int kilo = Convert.ToInt16(strkilo);
+		float boy = Convert.ToSingle(strboy);
+		float indeks = kilo/(boy*boy);
+		Console.WriteLine("Vücut Kitle İndeksiniz: " + indeks);
+	}
+}
