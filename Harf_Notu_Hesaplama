@@ -1,0 +1,78 @@
+// Bu kod ile öğrenci 100'lük sistemde aldığı notu girer ve program hangi harf notunu aldığını söyler.
+
+using System;
+
+namespace Operatorler
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Aldiginiz Notu Girin");
+            double a = Convert.ToDouble(Console.ReadLine());
+
+            if(a>=0 && a <= 100)
+            {
+                Console.Write("Harf Notunuz: ");
+                if (a <= 100 && a >= 93)
+                {
+                    Console.WriteLine("A");
+                }
+
+                if (a < 93 && a >= 90)
+                {
+                    Console.WriteLine("A-");
+                }
+
+                if (a < 90 && a >= 88)
+                {
+                    Console.WriteLine("B+");
+                }
+                if (a < 88 && a >= 83)
+                {
+                    Console.WriteLine("B");
+                }
+                if (a < 83 && a >= 80)
+                {
+                    Console.WriteLine("B-");
+                }
+                if (a < 80 && a >= 78)
+                {
+                    Console.WriteLine("C+");
+                }
+                if (a < 78 && a >= 73)
+                {
+                    Console.WriteLine("C");
+                }
+                if (a < 73 && a >= 70)
+                {
+                    Console.WriteLine("C-");
+                }
+                if (a < 70 && a >= 68)
+                {
+                    Console.WriteLine("D+");
+                }
+                if (a < 68 && a >= 63)
+                {
+                    Console.WriteLine("D");
+                }
+                if (a < 63 && a >= 60)
+                {
+                    Console.WriteLine("D-");
+                }
+                if (a < 60 && a >= 0)
+                {
+                    Console.WriteLine("F");
+                }
+            }
+
+            else
+            {
+                Console.WriteLine("Gecersiz Not");
+            }
+           
+
+            
+        }
+    }
+}
