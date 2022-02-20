@@ -1,0 +1,21 @@
+using System;
+
+namespace Dogum_Tarihi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Dogum yilinizi giriniz: ");
+            int dogum = Convert.ToInt32(Console.ReadLine());
+
+            DateTime tarih = DateTime.Now;
+            int yas = tarih.Year - dogum;
+
+            Console.WriteLine("Yasiniz: " + yas);
+
+ 
+        }
+    }
+}
