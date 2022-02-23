@@ -1,0 +1,17 @@
+using System;
+
+public static void Main(string[] args)
+{
+    string S = Console.ReadLine();
+        
+    try
+    {
+        int a = int.Parse(S);
+        Console.WriteLine(a);
+    }
+        
+    catch(Exception ex)
+    {
+        Console.WriteLine("Bad String");
+    }
+}
