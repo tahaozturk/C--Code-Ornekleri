@@ -1,0 +1,27 @@
+using System;
+
+namespace Saate_Gore_Selamlama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int time = DateTime.Now.Hour;
+
+            if(time <= 12)
+            {
+                Console.WriteLine("Günaydın");
+            }
+
+            else if (time < 18)
+            {
+                Console.WriteLine("İyi Günler");
+            }
+
+            else
+            {
+                Console.WriteLine("İyi Geceler");
+            }
+        }
+    }
+}
