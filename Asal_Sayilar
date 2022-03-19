@@ -1,0 +1,36 @@
+using System;
+
+namespace Asal_Sayılar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Sayı Giriniz:");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int sonuc=0;
+            int sira = 0;
+
+            for(int i=2; i<=a; i++)
+            {
+                for(int j=2; j<i; j++)
+                {
+                    sonuc = 0;
+
+                    if (i % j == 0)
+                    {
+                        sonuc = 1;
+                        break;
+                    }
+                }
+                if (sonuc == 0)
+                {
+                    sira++;
+                    Console.WriteLine(sira+". asal sayı : "+i);
+                }
+            }
+
+        }
+    }
+}
