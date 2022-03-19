@@ -1,0 +1,26 @@
+using System;
+
+namespace Fibonacci_Sayiları
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Sayı Giriniz: ");
+            int fibonacci = Convert.ToInt32(Console.ReadLine());
+
+            int sayi1 = 1;
+            int sayi2 = 1;
+            int toplam = 0;
+
+
+            for (int i=1; i<=fibonacci; i++)
+            {
+                sayi1 = sayi2;
+                sayi2 = toplam;
+                toplam = sayi1 + sayi2;
+                Console.WriteLine(i+". fibonacci sayısı: "+toplam);
+            }
+        }
+    }
+}
