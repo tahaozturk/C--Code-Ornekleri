@@ -11,40 +11,40 @@ namespace Hangi_Ayda_Olduğunu_Söyleyen_Program
             switch (ay)
             {
                 case 1:
-                    Console.WriteLine("Kış mevsimindesiniz.");
+                    Console.WriteLine("Ocak ayındasınız yani kış mevsimindesiniz.");
                     break;
                 case 2:
-                    Console.WriteLine("Kış mevsimindesiniz.");
+                    Console.WriteLine("Şubat ayındasınız yani kış mevsimindesiniz.");
                     break;
                 case 3:
-                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    Console.WriteLine("Mart ayındasınız yani bahar mevsimindesiniz.");
                     break;
                 case 4:
-                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    Console.WriteLine("Nisan ayındasınız yani bahar mevsimindesiniz.");
                     break;
                 case 5:
-                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    Console.WriteLine("Mayıs ayındasınız yani bahar mevsimindesiniz.");
                     break;
                 case 6:
-                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    Console.WriteLine("Haziran ayındasınız yani yaz mevsimindesiniz.");
                     break;
                 case 7:
-                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    Console.WriteLine("Temmuz ayındasınız yani yaz mevsimindesiniz.");
                     break;
                 case 8:
-                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    Console.WriteLine("Ağustos ayındasınız yani yaz mevsimindesiniz.");
                     break;
                 case 9:
-                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    Console.WriteLine("Eylül ayındasınız yanisonbahar mevsimindesiniz.");
                     break;
                 case 10:
-                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    Console.WriteLine("Ekim ayındasınız yani sonbahar mevsimindesiniz.");
                     break;
                 case 11:
-                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    Console.WriteLine("Kasım ayındasınız yani sonbahar mevsimindesiniz.");
                     break;
                 case 12:
-                    Console.WriteLine("Kış mevsimindesiniz.");
+                    Console.WriteLine("Aralık ayındasınız yani kış mevsimindesiniz.");
                     break;
 
                 default:
