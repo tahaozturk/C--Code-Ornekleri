@@ -1,0 +1,60 @@
+using System;
+
+namespace Hangi_Ayda_Olduğunu_Söyleyen_Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ay = DateTime.Now.Month;
+
+            switch (ay)
+            {
+                case 1:
+                    Console.WriteLine("Kış mevsimindesiniz.");
+                    break;
+                case 2:
+                    Console.WriteLine("Kış mevsimindesiniz.");
+                    break;
+                case 3:
+                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    break;
+                case 4:
+                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    break;
+                case 5:
+                    Console.WriteLine("Bahar mevsimindesiniz.");
+                    break;
+                case 6:
+                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    break;
+                case 7:
+                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    break;
+                case 8:
+                    Console.WriteLine("Yaz mevsimindesiniz.");
+                    break;
+                case 9:
+                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    break;
+                case 10:
+                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    break;
+                case 11:
+                    Console.WriteLine("Sonbahar mevsimindesiniz.");
+                    break;
+                case 12:
+                    Console.WriteLine("Kış mevsimindesiniz.");
+                    break;
+
+                default:
+                    Console.WriteLine("Veri girişi yanlış.");
+                    break;
+
+
+            }
+
+            
+        }
+    }
+}
