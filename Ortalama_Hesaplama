@@ -1,0 +1,37 @@
+using System;
+
+namespace Ortalama_Hesaplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Dizi uzunluğu giriniz: ");
+
+            int uzunluk = int.Parse(Console.ReadLine());
+
+            int[] dizi = new int[uzunluk];
+
+            for(int i=0; i<uzunluk; i++)
+            {
+                Console.WriteLine((i+1) + ". sayıyı giriniz: ");
+                dizi[i]= int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Girilen sayılar şu şekilde: ");
+
+            float toplam = 0;
+            float ortalama;
+
+            foreach (var sayi in dizi)
+            {
+                Console.Write(sayi+"  ");
+                toplam = toplam + sayi;
+            }
+            Console.WriteLine();
+            ortalama = toplam / uzunluk;
+            Console.WriteLine("Ortalamaları : " + ortalama);
+
+        }
+    }
+}
