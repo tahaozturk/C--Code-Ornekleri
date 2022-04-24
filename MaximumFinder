@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+
+namespace MaximumFinder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("İşiniz bittiğinde 'exit' yazarak çıkabilirsiniz");
+
+            int i = 0;
+            bool durum = true;
+            List<double> num = new List<double>();
+
+
+            while(durum)
+            {
+                Console.WriteLine((i+1)+". sayıyı giriniz");
+
+                string yanit = Console.ReadLine();
+                
+
+                if (yanit == "exit")
+                {
+                    durum = false;
+                }
+                else 
+                {
+                    num.Add(double.Parse(yanit));
+                    i++;
+                }
+            }
+
+            Console.WriteLine("Maksimum değer = "+ Maximum(num));
+
+        }
+
+        static double Maximum(List<double> num)
+        {
+            double MaximumValue = num[0];
+
+            for(int i=1; i < num.Count; i++)
+            {
+                if(num[i] > MaximumValue)
+                {
+                    MaximumValue = num[i];
+                }
+                else
+                {
+                    continue;
+                }
+            }
+
+            return MaximumValue;
+        }
+    }
+}
