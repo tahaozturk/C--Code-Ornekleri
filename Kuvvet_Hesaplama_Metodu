@@ -1,0 +1,46 @@
+using System;
+
+namespace Kuvvet_Hesaplama_Metodu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kare mi alacaksınız yoksa kuvvet mi? 'kare' veya 'kuvvet'  yazın:  ");
+            string islem = Console.ReadLine();
+            if (islem == "kare")
+            {
+                Console.Write("Karesi alınacak sayıyı girin: ");
+                int sayi = int.Parse(Console.ReadLine());
+                Console.WriteLine("Sonuç = " + Kuvvet(sayi));
+            }
+            else if (islem == "kuvvet")
+            {
+                Console.WriteLine("Karesi alınacak sayıları girin: ");
+                Console.Write("Taban = ");
+                int sayi1 = int.Parse(Console.ReadLine());
+                Console.Write("Üs = ");
+                int sayi2 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Sonuç = " + Kuvvet(sayi1, sayi2));
+            }
+            else
+            {
+                Console.WriteLine("İşleminiz geçersiz!");
+            }
+        }
+
+        static int Kuvvet(int taban, int kuvvet = 2)
+        {
+
+            int sonuc = 1;
+         
+            for(int i=0; i<kuvvet; i++)
+            {
+                sonuc = sonuc * taban;
+            }
+
+            return sonuc;
+            
+         }
+    }
+}
